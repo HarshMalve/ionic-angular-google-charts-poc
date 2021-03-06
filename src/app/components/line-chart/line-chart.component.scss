@@ -1,0 +1,28 @@
+.main-div {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    .chart-div {
+        z-index: 0;
+        position: relative;
+        background: #0072BC;
+        google-chart {
+            margin: auto;
+        }
+        .text-div {
+            position: absolute;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            z-index: 1;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

@@ -1,20 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <app-line-chart *ngIf="charType==2" [type]="type" [data]="data" [options]="options" [title]="title"></app-line-chart>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<app-pie-chart *ngIf="charType==1" [data]="data" [options]="options" [type]="type" [completedText]="completedText"></app-pie-chart>
 </ion-content>
